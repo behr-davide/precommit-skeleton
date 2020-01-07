@@ -1,0 +1,18 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
+    hooks:
+    - id: trailing-whitespace
+      name: Trim Trailing Whitespace
+      description: This hook trims trailing whitespace.
+
+    - id: double-quote-string-fixer
+      name: Replace Double Quotes
+      description: This hook replaces single quotes with double quotes.
+
+    - id: flake8
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.8
